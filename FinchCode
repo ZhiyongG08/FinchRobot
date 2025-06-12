@@ -3,18 +3,18 @@ public class FinchDealCircle {
     public static void main(String[] args) {
         Finch finch = new Finch();
 
-        // Move in a circular pattern with stops
-        for (int i = 0; i < 5; i++) { // Adjust for more or fewer stops
-            finch.setWheelVelocities(200, 100, 1000); // Move a short curved distance
+       
+        for (int i = 0; i < 5; i++) { 
+            finch.setWheelVelocities(200, 100, 1000); 
             finch.stop();
             try {
-                Thread.sleep(500); // Pause between "deals"
+                Thread.sleep(500); 
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
 
-        // Stop the Finch
+
         finch.quit();
     }
 }
