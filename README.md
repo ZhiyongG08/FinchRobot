@@ -27,7 +27,9 @@
 
 ### Code to Highlight
 ```java
-
+for (int i = 0; i < 5; i++) { 
+            finch.setWheelVelocities(200, 100, 1000); 
+            finch.stop();
 ```
 
 ---
